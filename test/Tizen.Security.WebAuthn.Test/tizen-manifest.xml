@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns="http://tizen.org/ns/packages" api-version="9.0" package="Tizen.Security.WebAuthn.Test" version="1.0.0">
+    <profile name="common" />
+    <description>Tizen.Security.WebAuthn.Test</description>
+    <ui-application appid="org.tizen.WebAuthn.Test" exec="Tizen.Security.WebAuthn.Test.dll" nodisplay="false" multiple="false" taskmanage="true" splash-screen-display="true" type="dotnet" launch_mode="single">
+      <icon>WebAuthn.Test.png</icon>
+      <label>WebAuthn.Test</label>
+    </ui-application>
+    <privileges>
+      <privilege>http://tizen.org/privilege/window.priority.set</privilege>
+      <privilege>http://tizen.org/privilege/bluetooth</privilege>
+      <privilege>http://tizen.org/privilege/internet</privilege>
+      <privilege>http://tizen.org/privilege/display</privilege>
+    </privileges>
+    <feature name="http://tizen.org/feature/security.webauthn">true</feature>
+    <feature name="http://tizen.org/feature/network.wifi">true</feature>
+</manifest>
